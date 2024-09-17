@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> <!--custom css-->
+    <script src="https://kit.fontawesome.com/5efd70f348.js" crossorigin="anonymous"></script> <!--icons from font awesome-->
+</head>
+
+<!--here write comments -->
+
+<body>
+    <!--Header Design-->
+   <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo-rem.png" class="logo"> <!--logo class is made so that it can be accessed in css-->
+            
+                <ul id="sidemenu"> <!--add this id fter adding the below x and menu onclick functions, after this add JS below-->
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!--this closemenu X added for mobile screen,,,after adding index 2 in CSS nav ul, come here and add onclick-->
+                </ul>
+                
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!--this menu added for mobile screen so it should be hidden in web page and only visible in small screens, so add these class name fa-solid in CSS-->
+            </nav>
+        <div class="header-row">    
+                    
+            <div class="header-text">
+                <h1 class="anim">Hello, I am <span>Maimoona</span></h1>
+                <p class="anim">A Passionate Product and Project Manager</p>
+                
+            </div>
+                    
+            <div class="profession-container">
+                <img src="images/Profile Picture.png" class="anim">
+            </div>
+        </div>
+    </div>
+    </div> 
+
+   <!---------------------------------------------------About section-------------------------------------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            
+            <div class="about-col-1">
+                <img src="images/2 Profile Picture.png">
+            </div>
+            
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="wrap-text">I am an engineer and an MBA graduate with 6+ years of professional experience working in operations, project coordination, and product management, driving success in the IT/telecom, automotive, and e-commerce industries. My technical expertise, business acumen, and entrepreneurial mindset allow me to understand complex ideas and translate them into actionable solutions that add value to the team and organization.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills"> <!--for hovering between skills, education,experience add javascript down-->
+                    <ul>
+                        <li><span>Technical Skills</span> <br>Figma, Android Studio, HTML, CSS, SQL <br> Qlik, Power BI, Microsoft Office Suite, Jira, Confluence, Trello, Asana, Monday.com </li>
+                        <li><span>Core Skills</span><br>Agile Project Management, Project Workflow Automation, Business Process Modeling<br>Market Research, Competitors Analysis, Data Analysis, Go-To-Market Strategy<br>User Research, UX/UI Design, Usability Testing, Web Development<br>Change Management, Quality Management, Risk Management, Stakeholder Management</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Present</span> <br> Freelancer </li>
+                        <li><span>2022 - 2023</span><br>Product Management Intern <br><em>HARMAN International, Karlsbad, Baden-Württemberg, Germany</em> </li>
+                        <li><span>2013 - 2022</span><br>Self-Employed <br><em>Online E-commerce Shop</em></li>
+                        <li><span>2006 - 2009</span><br>Operations Engineer <br><em>Pakistan Telecommunication Company Limited (PTCL) Islamabad, Pakistan</em></li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - 2023</span><br>MBA in International Business Management <br><em>Ludwigshafen University of Business and Society, Ludwigshafen am Rhein, Germany</em></li>
+                        <li><span>2009 - 2013</span><br>Master's in Electrical Engineering and Information Technology <br><em>Karlsruhe Institute of Technology KIT, Karlsruhe, Germany</em></li>
+                        <li><span>2002 - 2005</span> <br>Bachelor's in Electrical Engineering <br><em>University of Engineering and Technology Taxila, Pakistan</em></li>
+                                                                
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+
+<!------------------------------------------------- services section------------------------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> <!--same we added in Adout me section -->
+        <div class="services-list"> <!--after this add the respective css about grid
+             with these class names then write text in grid as below div-->
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                    <h2>Agile Project Management</h2>
+                    <ul class="wrap-text">
+                        <li>Manage projects using best practices from project initiation with detailed charters and plans to meticulous execution with WBS, Gantt Charts, and close-out reports.</li>
+                        <li>Leverage agile methodologies (Scrum, Kanban, Waterfall, and Agile) for adaptable and iterative project delivery.</li>
+                        <span class="read-more-content">
+                        <li>Master project management tools (Jira, Confluence, Trello, Asana, Monday.com) for seamless collaboration and task workflow management.</li>
+                        <li>Build strong stakeholder relationships to ensure project alignment and success.</li>
+                        <li>Deliver high-quality projects within budget and timeline.</li></span>
+                        
+                        <button class="read-more-btn" >Read More</button>
+
+                    </ul>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Strategic Product Management</h2>
+                    <ul class="wrap-text">
+                        <li>Leverage strong research skills and data-driven insights to craft effective product roadmaps.</li>
+                        <li>Deliver exceptional user experiences through a user-centric design approach.</li>
+                        <span class="read-more-content">
+                        <li>Employ design tools like Figma to visualize product concepts and collaborate seamlessly.</li>
+                        <li>Translate business objectives into actionable product strategies.</li>
+                        <li>Ensure product success by aligning user needs with market demands.</li></span>
+                    
+                        <button class="read-more-btn">Read More</button>
+                        
+                    </ul>
+            </div>
+        
+            <div>
+                <i class="fa-brands fa-searchengin"></i>
+                    <h2>Market Research</h2>
+                    <ul class="wrap-text">
+                        <li>Proficient in primary and secondary research (surveys, focus groups, interviews, and data analysis) to gather data from various sources.</li>
+                        <li>Identify target audiences accurately with a deep understanding of market segmentation.</li>
+                        <span class="read-more-content">
+                        <li>Assess competitors' strengths, weaknesses, opportunities, and threats.</li>
+                        <li>Create clear and concise market research reports and presentations by using data visualization tools (e.g., Power BI, Qlik) to communicate insights effectively.</li></span>
+                
+                        <button class="read-more-btn">Read More</button>
+                        
+                    </ul>
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------Portfolio/Work Section------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="images/1.png">
+                <div class="layer">
+                    <h3>Product Design & Development</h3>
+                    <p>Here, I am presenting a portfolio project of an e-commerce website</p>
+                    <a href="https://maimoonaqbl.github.io/gemstones-ecommerce-website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        
+            <div class="work">
+                <img src="images/2.png">
+                <div class="layer">
+                    <h3>Research & Reports</h3>
+                    <p>Here, I am presenting some samples of my work that illustrate how I create various documents and reports</p>
+                    <a href="images/Product Development Proposal Website.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/3.png">
+                <div class="layer">
+                    <h3>Project Management Portfolio</h3>
+                    <p> Here, I am presenting a portfolio project that illustrates my project management skills</p>
+                    <a href="images/Project Management -Menu Tablets Roll-out Project.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        
+        </div>
+
+        <!----  <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+
+<!---------------------------------------------------Contact----------------------------------------->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="row">
+            <div class="contact-left">
+                
+                <p> <i class="fa-solid fa-paper-plane"></i> maimoona.qbl@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +49-176-68185571</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/maimoona-iqbal-328815170/"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+                <!-- <a href="images/CV Maimoona Iqbal.pdf" download="" class="btn btn2">Download CV</a> -->
+                
+                <!--btn class already defined so it immeduately 
+                pick the previous style from CSS , here is another btn2 is also defined for more css style...
+                also if you write download it will download your cv immediately if you dont write 
+                download it will open cv in the same tab-->
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> <!-- 'name' here in these 3 rows added to make an excel sheet and record data -->
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span> <!--here the message display when you message sent successfully-->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!--footer design-->
+<footer class="footer">
+    <div class="copyright">
+        <p>Copyright 2024 by Maimoona Iqbal | All Rights Reserved</p>
+    </div>
+    
+</footer>
+   
+
+    <!--here we add the javascript for the about me section so that this code 
+    creates a tab navigation system where clicking on a tab activates that tab 
+    and displays the corresponding content while hiding other tabs and content. -->
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+
+<!--here add the JS for onclick menu and x function for small screens-->
+   <script>
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+   </script>
+
+<!--Script is added here to connect the contact form code with excel sheet,, after
+adding excel and necessary steps defined in github page https://github.com/jamiewilson/form-to-google-sheets
+paste the copied url of excel sheet and the script here in html, add also this 'submit-to-google-sheet' 
+above in contact form as name-->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwNBL6wq3edj2b8wIwUez58Mbe_Bs1b0VUFDHFct_w3rLwIshR8VGPL2vm201TebeBv/exec'
+    const form = document.forms['submit-to-google-sheet'] 
+    
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+<!---------------Script for Read more function--------------------->
+<script>
+    const readMoreButton = document.querySelectorAll('.read-more-btn');
+
+    readMoreButton.forEach((button) => {
+        button.addEventListener('click', () => {
+    
+    const targetSection = button.closest('.wrap-text');
+    const readMoreContent = targetSection.querySelector('.read-more-content');
+    
+        if (readMoreContent.style.display === 'none') {
+        readMoreContent.style.display = 'block';
+        button.textContent = 'Read Less';
+      } else {
+        readMoreContent.style.display = 'none';
+        button.textContent = 'Read More'; 
+      }
+    });
+    
+    });
+</script>
+
+</body>
+</html>
+
